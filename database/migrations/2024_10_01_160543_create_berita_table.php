@@ -8,7 +8,7 @@ class CreateBeritaTable extends Migration
 {
     public function up()
     {
-        Schema::create('berita', function (Blueprint $table) {
+        Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
             $table->text('konten');
@@ -22,6 +22,6 @@ class CreateBeritaTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('berita');
+        Schema::dropIfExists('beritas');
     }
 }

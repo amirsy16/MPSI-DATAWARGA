@@ -9,7 +9,7 @@ class Berita extends Model
 {
     use HasFactory;
 
-    protected $table = 'Berita';
+    protected $table = 'berita';
 
     // Jika menggunakan timestamps, tidak perlu mendefinisikan created_at dan updated_at
     protected $fillable = [

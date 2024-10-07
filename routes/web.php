@@ -31,9 +31,6 @@ Route::get('/loginuser', function () {
     return view('loginuser');
 });
 
-Route::get('/registeruser', function () {
-    return view('registeruser');
-});
 
 
 // routes/web.php
