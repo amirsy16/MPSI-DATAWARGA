@@ -9,7 +9,7 @@
                 <!-- Bagian Ucapan Selamat Datang -->
                 <div class="mt-3 text-center" style="background-color: #dff0d8; padding: 10px; border-radius: 5px;">
                     <h2>Dashboard Admin RT 04: Pusat Informasi dan Layanan</h2>
-                    <p><i>Tinjuku tidak mungkin meleset</i></p>
+                    <p><i>Temukan berita terbaru layanan online di satu tempat.</i></p>
                 </div>
                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top: 20px;">
                     <div class="carousel-indicators">
