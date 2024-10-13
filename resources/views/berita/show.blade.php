@@ -23,7 +23,7 @@
                                     <!-- Gambar Berita -->
                                     <div class="text-center mb-4"> <!-- Menambahkan margin bawah untuk jarak -->
                                         @if($berita->foto)
-                                          <img src="{{ Storage::url($berita->foto) }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
+                                         <img src="{{ asset('storage/' . $berita->foto) }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
                                         @else
                                             <p>Foto tidak tersedia</p>
                                         @endif
