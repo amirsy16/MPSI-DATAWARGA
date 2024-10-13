@@ -28,7 +28,7 @@
                             <td>{{ $berita->tanggal->format('d-m-Y') }}</td> <!-- Menampilkan tanggal -->
                             <td>
                                 @if($berita->foto)
-                                    <img src="{{ $berita->foto }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
+                                   <img src="{{ asset('storage/' . $berita->foto) }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
                                 @else
                                     <p>Foto tidak tersedia</p>
                                 @endif
