@@ -1,10 +1,10 @@
 @extends('layout.template')
 
+@section('content') <!-- Pastikan Anda memiliki section untuk konten -->
 <div class="container-fluid">
     <div class="row">
         @include('layout.navbar')
-        <!-- Bagian konten setelah navbar -->
-        <div class="container-fluid h-100 mt-5 pt-5"> <!-- Menyesuaikan lebar kolom -->
+        <div class="container-fluid h-100 mt-5 pt-5">
             <h2 class="mt-3">Daftar Berita</h2>
             <a href="{{ route('berita.create') }}" class="btn btn-primary mb-3">Tambah Berita</a>
             @if(session('success'))
@@ -25,10 +25,10 @@
                         <tr>
                             <td>{{ $berita->judul }}</td>
                             <td>{{ Str::limit($berita->konten, 100) }}</td>
-                            <td>{{ $berita->tanggal->format('d-m-Y') }}</td> <!-- Menampilkan tanggal -->
+                            <td>{{ $berita->tanggal ? $berita->tanggal->format('d-m-Y') : '-' }}</td>
                             <td>
                                 @if($berita->foto)
-                                    <img src="{{ $berita->foto }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
+                                    <img src="{{ asset('storage/' . $berita->foto) }}" alt="Foto Berita" class="img-fluid" style="max-width: 100px; height: auto;">
                                 @else
                                     <p>Foto tidak tersedia</p>
                                 @endif
@@ -48,3 +48,4 @@
         </div>
     </div>
 </div>
+@endsection
